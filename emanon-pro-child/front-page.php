@@ -36,7 +36,7 @@ get_header(); ?>
 						endif;
 						?>
 				</ul>
-				<div class="read-more"><a href="<?php get_template_directory(); ?>/blog" class="btn-border btn-mid">もっと見る</a></div>
+				<div class="read-more yk-read-more"><a href="<?php get_template_directory(); ?>/blog" class="btn-border btn-mid">もっと見る</a></div>
 		    </div>
 
 		    <div id="post-list-section" class="col-main clearfix">
@@ -55,7 +55,7 @@ get_header(); ?>
 						<span>店舗一覧</span><span class="yk-sub-title">-store-</span>
 					</h2>
 				</div>
-				
+				<?php get_template_part('templates/stores'); ?>
 				<div class="read-more"><a href="<?php get_template_directory(); ?>/stores" class="btn-border btn-mid">店舗一覧</a></div>
 			</div>
 
@@ -68,9 +68,17 @@ get_header(); ?>
 		    	<?php echo do_shortcode('[metaslider id="3299"]'); ?>
 		    	<div class="read-more"><a href="<?php get_template_directory(); ?>/services" class="btn-border btn-mid">取扱商品一覧</a></div>
 			</div>
-			<div id="post-list-section" class="col-main yk-recuruit clearfix">
-				<div class="yk-top-imglink">
-					<a href="<?php get_template_directory(); ?>/about/recruit">採用情報</a>
+
+			<div id="post-list-section" class="col-main yk-recruit clearfix" style="background-image: url(<?php get_template_directory(); ?>/wp-content/uploads/2014/11/IMG_6334-1.jpg)">
+				<div class="yk-back-filter">
+					<div class="entry-header">
+						<h2>
+							<span>採用情報</span><span class="yk-sub-title">-recruit-</span>
+						</h2>
+					</div>
+					<div class="yk-recruit-link">
+						<a href="<?php get_template_directory(); ?>/about/recruit">募集要項</a>
+					</div>
 				</div>
 			</div>
 		</main>

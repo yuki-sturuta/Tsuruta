@@ -18,30 +18,31 @@ Emanon Pro 子テーマ用のスタイルを以下に記述
 
 /*トップページLPページ用スライダー*/
 .home .ml-slider-3-17-4 {
-	margin-bottom: 70px !important;
+	margin-bottom: 7rem !important;
 }
 
 @media screen and (min-width: 768px) {
 	.home　.content {
-	    padding: 35px 0;
+	    padding: 3.5rem 0;
 	}
 }
-
 /*ここまでトップページLPページ用スライダー*/
 
+/*トップページサービス紹介用スライダー*/
 .home .metaslider .caption .yk-service-title {
 	text-align: center;
 	font-size: 2rem;
 }
+/*ここまでトップページサービス紹介用スライダー*/
 
 /*トップページ最新投稿*/
 .home .entry-header h2 > span {
-	font-size: 2.5rem;
+	font-size: 3rem;
 }
 
 .home .entry-header h2 > span:last-child {
-	font-size: 1.5rem;
-	line-height: 2.2em;
+	font-size: 2rem;
+	line-height: 2em;
 }
 
 .home .yk-post-list:hover {
@@ -50,7 +51,7 @@ Emanon Pro 子テーマ用のスタイルを以下に記述
 }
 
 .home .archive-list {
-	margin: 0px;
+	margin: 0;
 	border: none;
 }
 
@@ -58,11 +59,11 @@ Emanon Pro 子テーマ用のスタイルを以下に記述
 	display: flex;
 	display: -webkit-flex;
 	float: none;
-	padding: 20px 0 20px 7px;
+	padding: 2rem 0 2rem .7rem;
 }
 
 .home .date {
-	padding-right: 10px;
+	padding-right: 1rem;
     margin: auto 0;
 }
 
@@ -71,35 +72,92 @@ Emanon Pro 子テーマ用のスタイルを以下に記述
 }
 
 .home .read-more {
-    position: unset; 
-    bottom: unset; 
-    margin-top: 25px;
+    position: unset;
+    bottom: unset;
+    margin-top: 7rem;
+}
+
+.home .yk-read-more {
+	margin-top: 4.2rem;
 }
 
 .home .col-main {
-	margin-bottom: 60px;
+	margin-bottom: 6rem;
+}
+/*ここまでトップページ最新投稿*/
+
+/*トップページ店舗情報*/
+.home .yk-store-type li {
+	border: 1px solid #f8f8f8;
+	padding: 5px;
+	margin-top: 30px;
+}
+
+.home .yk-store-img {
+	
+}
+
+.home .yk-store-img img {
+	width: 300px;
+	height: 300px;
+}
+
+.home .yk-store-box {
+	display: inline-block;
 }
 
 
-トップページ採用情報リンク
-.home .yk-recuruit {
-	background-image: url(wp-content/uploads/2020/09/IMG_6334-1-2-scaled.jpg);
+
+/*ここまでトップページ店舗情報*/
+
+
+/*トップページ採用情報リンク*/
+.home .yk-recruit {
     width: 100%;
     height: 400px;
     background-size: cover;
 }
 
-.home .yk-reruruit-link {
+.home .yk-back-filter {
+	backdrop-filter: blur(2px) contrast(.8);
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.home .yk-recruit .entry-header {
+	margin-bottom: 0px !important;
+	margin-top: 5rem;
 	text-align: center;
 }
 
-.home .yk-reruruit-link a {
-	padding: 40px 100px;
-    border: 1px solid #f0f0f0;
-    border-radius: 17px;
-    font-size: 30px;
-    color: #232323;
+.home .yk-recruit .entry-header h2 > span {
+	color: #f8f8f8;
 }
+
+.home .yk-recruit .entry-header,
+.home .yk-recruit .entry-header h2 > span {
+	border: none !important;
+}
+
+.home .yk-recruit-link {
+	text-align: center;
+    display: table-row;
+    vertical-align: middle;
+}
+
+.home .yk-recruit-link a {
+	padding: 5% 12%;
+    border-radius: 1.7rem;
+    font-size: 3rem;
+    color: #ffffff;
+    background-color: rgba(35,35,35, 0.7);
+}
+
+.home .yk-recruit-link a:hover {
+	color: gray;
+}
+/*ここまでトップページ採用情報リンク*/
 
 @media screen and (min-width: 992px){
 	.home .col-main {
@@ -107,19 +165,42 @@ Emanon Pro 子テーマ用のスタイルを以下に記述
 	    margin: auto;
 	    width: -webkit-calc(100% - 0px);
 	    width: calc(100% - 0px);
-	    margin-bottom: 80px;
+	    margin-bottom: 8rem;
+	}
+
+	.home .col-main:last-child {
+		margin-bottom: 0rem;
+	}
+
+	.home .yk-recruit .entry-header h2 > span {
+		font-size: 4rem;
+	}
+
+	.home .yk-recruit .entry-header h2 > span:last-child {
+		font-size: 3rem;
 	}
 }
 
 @media screen and (max-width: 992px){
 	.home .archive-list li {
 		display: block;
-		padding: 15px 0 15px 7px;
+		padding: 1.5rem 0 1.5rem .7rem;
 	}
 
 	.home .date {
 		display: block;
-		padding-bottom: 5px;
+		padding-bottom: .5rem;
+	}
+
+	.home .yk-recruit {
+		height: 300px
+	}
+
+}
+
+@media screen and (max-width: 500px){
+	.home .yk-recruit {
+		height: 250px
 	}
 }
-/*ここまでトップページ最新投稿*/
+

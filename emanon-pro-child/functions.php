@@ -58,4 +58,3 @@ add_action( 'customize_save_after', 'emanon_css_compression', 10, 1 );
 add_editor_style( 'lib/css/editor-style.css' );
 
 //Emanon Pro 子テーマ用の関数を以下に記述
-

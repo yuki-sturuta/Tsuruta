@@ -87,29 +87,47 @@ Emanon Pro 子テーマ用のスタイルを以下に記述
 /*ここまでトップページ最新投稿*/
 
 /*トップページ店舗情報*/
-.home .yk-store-type li {
-	border: 1px solid #f8f8f8;
-	padding: 5px;
+.yk-store-type .yk-first-box {
+	margin-bottom: 30px;
+}
+
+.yk-store-type li {
+	border: 1px solid #9b8d77;
+	padding: 13px;
 	margin-top: 30px;
+	margin-right: 34px;
+	float: left;
+	display: table;
+	width: 47%;
 }
 
-.home .yk-store-img {
-	
+.yk-store-img img {
+	width: 260px;
+	height: 260px;
 }
 
-.home .yk-store-img img {
-	width: 300px;
-	height: 300px;
+.yk-store-box {
+	display: table-cell;
 }
 
-.home .yk-store-box {
+.yk-store-type .yk-store-text {
+	padding-left: 20px;
+	position: relative;
+}
+
+.yk-store-type .yk-store-link {
 	display: inline-block;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
 }
 
-
+.yk-store-type .yk-store-link a {
+	display: unset;
+	padding: 13px 25px;
+}
 
 /*ここまでトップページ店舗情報*/
-
 
 /*トップページ採用情報リンク*/
 .home .yk-recruit {
@@ -159,6 +177,14 @@ Emanon Pro 子テーマ用のスタイルを以下に記述
 }
 /*ここまでトップページ採用情報リンク*/
 
+/*投稿個別ページのレイアウト*/
+.single .related-thumbnail-square img, .single .nav-previous img {
+	object-fit: contain;
+}
+
+/*ここまで投稿個別ページのレイアウト*/
+
+
 @media screen and (min-width: 992px){
 	.home .col-main {
 		float: none;
@@ -181,12 +207,18 @@ Emanon Pro 子テーマ用のスタイルを以下に記述
 	}
 }
 
-@media screen and (max-width: 992px){
-	.home .archive-list li {
-		display: block;
-		padding: 1.5rem 0 1.5rem .7rem;
+@media screen and (min-width: 894px) and (max-width: 1080px) {
+	.yk-store-type li {
+		margin-top: 25px;
+    	margin-right: 25px;
 	}
+	.yk-store-img img {
+    	width: 200px;
+    	height: 200px;
+	}
+}
 
+@media screen and (max-width: 992px){
 	.home .date {
 		display: block;
 		padding-bottom: .5rem;
@@ -198,9 +230,93 @@ Emanon Pro 子テーマ用のスタイルを以下に記述
 
 }
 
+@media screen and (max-width: 893px) {
+	.home .archive-header-title {
+   		font-size: 1.4rem;
+	}
+
+	.home .yk-read-more {
+    	margin-top: 2.2rem;
+	}
+
+	.home .read-more {
+    	margin-top: 4.9rem;
+	}
+
+	.home .yk-store-img img {
+    	width: 200px;
+    	height: 200px;
+	}
+
+	.home .entry-header h2 > span {
+    	font-size: 1.7rem;
+	}
+
+	.home .entry-header h2 > span:last-child {
+	    font-size: 1.2rem;
+	    line-height: 2em;
+	}
+
+	.home .archive-list li {
+		display: block;
+	    padding: .8rem 0 .8rem .7rem;
+	}
+
+	.home .metaslider .caption .yk-service-title {
+    	font-size: 1.5rem;
+	}
+
+	.home .yk-store-box {
+	    display: block;
+	}
+
+	.home .yk-store-header h3 {
+		font-size: 1.3rem;
+	}
+
+	.home .yk-store-type li {
+		width: 48%;
+		margin-right: 10px;
+		padding: 7px;
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	.home .yk-store-type .yk-store-text {
+    	padding-left: 0;
+	}
+
+	.home .yk-store-text h4 {
+		font-size: 1.4rem
+	}
+
+	.home .yk-store-text p {
+		font-size: 1.3rem
+	}
+
+	.home .yk-store-type .yk-store-link {
+		bottom: 0;
+    	right: 0;
+    	margin-top: 5px;
+    	position: unset;
+    	display: block;
+	}
+
+	.home .yk-store-type .yk-store-link a {
+	    display: block;
+	    padding: 5px;
+	}
+
+}
+
+
 @media screen and (max-width: 500px){
 	.home .yk-recruit {
 		height: 250px
+	}
+
+	.home .yk-store-type li {
+		width: 100%;
 	}
 }
 

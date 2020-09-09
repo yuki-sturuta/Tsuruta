@@ -92,18 +92,19 @@ Emanon Pro 子テーマ用のスタイルを以下に記述
 }
 
 .yk-store-type li {
-	border: 1px solid #9b8d77;
+	border: 1px solid #e2e5e8;
 	padding: 13px;
 	margin-top: 30px;
 	margin-right: 34px;
 	float: left;
 	display: table;
-	width: 47%;
+	width: 46%;
 }
 
 .yk-store-img img {
 	width: 260px;
 	height: 260px;
+	object-fit: contain;
 }
 
 .yk-store-box {
@@ -184,6 +185,11 @@ Emanon Pro 子テーマ用のスタイルを以下に記述
 
 /*ここまで投稿個別ページのレイアウト*/
 
+/*フッターのレイアウト*/
+.pagetop {
+	cursor: unset;
+}
+/*ここまでフッターのレイアウト*/
 
 @media screen and (min-width: 992px){
 	.home .col-main {
@@ -215,6 +221,15 @@ Emanon Pro 子テーマ用のスタイルを以下に記述
 	.yk-store-img img {
     	width: 200px;
     	height: 200px;
+	}
+
+	.yk-store-type .yk-store-link {
+	    bottom: 5px;
+	    right: 15px;
+	}
+
+	.yk-store-type .yk-store-link a {
+	    padding: 8px 25px;
 	}
 }
 
@@ -257,6 +272,18 @@ Emanon Pro 子テーマ用のスタイルを以下に記述
 	    line-height: 2em;
 	}
 
+		.home .yk-recruit .entry-header h2 > span {
+		font-size: 2.5rem
+	}
+
+	.home .yk-recruit .entry-header span:last-child {
+		font-size: 1.9rem;
+	}
+
+	.home .yk-recruit-link a {
+		font-size: 2.5rem;
+	}
+
 	.home .archive-list li {
 		display: block;
 	    padding: .8rem 0 .8rem .7rem;
@@ -284,14 +311,15 @@ Emanon Pro 子テーマ用のスタイルを以下に記述
 
 	.home .yk-store-type .yk-store-text {
     	padding-left: 0;
+    	margin-top: 10px;
 	}
 
 	.home .yk-store-text h4 {
-		font-size: 1.4rem
+		font-size: 1.4rem;
 	}
 
 	.home .yk-store-text p {
-		font-size: 1.3rem
+		font-size: 1.3rem;
 	}
 
 	.home .yk-store-type .yk-store-link {
@@ -306,17 +334,16 @@ Emanon Pro 子テーマ用のスタイルを以下に記述
 	    display: block;
 	    padding: 5px;
 	}
-
 }
-
 
 @media screen and (max-width: 500px){
 	.home .yk-recruit {
-		height: 250px
+		height: 250px;
 	}
 
 	.home .yk-store-type li {
 		width: 100%;
 	}
+
 }
 

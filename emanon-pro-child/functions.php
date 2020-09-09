@@ -58,3 +58,20 @@ add_action( 'customize_save_after', 'emanon_css_compression', 10, 1 );
 add_editor_style( 'lib/css/editor-style.css' );
 
 //Emanon Pro 子テーマ用の関数を以下に記述
+
+// Site name
+function yk_get_emanon_footer_copyright() {
+  $footer_copyright_text = '&nbsp;'.get_bloginfo( 'name' );
+  $footer_copyright_text = apply_filters( 'emanon_footer_custom_copyright_text', $footer_copyright_text );
+  return strip_tags( $footer_copyright_text );
+}
+
+// Powered by emanon
+function yk_emanon_footer_copy() {
+  $yk_powered_by_year = date('Y');
+  $powered_by =  '.All Rights Reserved.';
+  $powered_by = apply_filters( 'emanon_footer_custom_powered_by', $powered_by );
+  echo '<div class="copyright">' . "\n";
+  echo '<small><a href="' . esc_url( home_url() ) . '">' .'&copy;' . $yk_powered_by_year . esc_html( yk_get_emanon_footer_copyright() ) . '</a>' . $powered_by . '</small>' . "\n";
+  echo '</div>' . "\n";
+}

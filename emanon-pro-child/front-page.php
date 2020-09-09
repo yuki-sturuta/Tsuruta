@@ -69,7 +69,7 @@ get_header(); ?>
 		    	<div class="read-more"><a href="<?php get_template_directory(); ?>/services" class="btn-border btn-mid">取扱商品一覧</a></div>
 			</div>
 
-			<div id="post-list-section" class="col-main yk-recruit clearfix" style="background-image: url(<?php get_template_directory(); ?>/wp-content/uploads/2014/11/IMG_6334-1.jpg)">
+			<div id="post-list-section" class="col-main yk-recruit clearfix" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/lib/images/recruit/DSC_9114.JPG)">
 				<div class="yk-back-filter">
 					<div class="entry-header">
 						<h2>
